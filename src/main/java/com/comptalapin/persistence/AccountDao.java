@@ -2,7 +2,6 @@ package com.comptalapin.persistence;
 
 import com.comptalapin.model.Account;
 
-import java.math.BigDecimal;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;

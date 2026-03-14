@@ -3,19 +3,16 @@ package com.comptalapin.persistence;
 import com.comptalapin.model.*;
 
 import java.sql.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 public class OperationDao {
     private final Connection connection;
     private final AccountDao accountDao;
-    private final QuarterDao quarterDao;
 
     public OperationDao() {
         this.connection = DatabaseManager.getInstance().getConnection();
         this.accountDao = new AccountDao();
-        this.quarterDao = new QuarterDao();
     }
 
     public Operation save(Operation operation) throws SQLException {

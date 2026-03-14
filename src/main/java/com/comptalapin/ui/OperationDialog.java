@@ -1,7 +1,6 @@
 package com.comptalapin.ui;
 
 import com.comptalapin.model.*;
-import com.comptalapin.service.QuarterService;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,7 +12,6 @@ import java.util.List;
 public class OperationDialog extends JDialog {
     private final Quarter quarter;
     private final List<Account> accounts;
-    private final QuarterService quarterService;
     private Operation result;
 
     private JTextField dateField;
@@ -24,11 +22,10 @@ public class OperationDialog extends JDialog {
     private JTextField amountField;
     private JLabel targetLabel;
 
-    public OperationDialog(Frame parent, Quarter quarter, List<Account> accounts, QuarterService quarterService) {
+    public OperationDialog(Frame parent, Quarter quarter, List<Account> accounts) {
         super(parent, "Nouvelle opération", true);
         this.quarter = quarter;
         this.accounts = accounts;
-        this.quarterService = quarterService;
         initComponents();
         pack();
         setLocationRelativeTo(parent);

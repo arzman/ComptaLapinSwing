@@ -215,7 +215,7 @@ public class QuarterPanel extends JPanel {
             }
             OperationDialog dialog = new OperationDialog(
                     (Frame) SwingUtilities.getWindowAncestor(this),
-                    selected, accounts, quarterService);
+                    selected, accounts);
             dialog.setVisible(true);
             Operation op = dialog.getResult();
             if (op != null) {
