@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.comptalapin.service.QuarterServiceTest" time="0.456" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.comptalapin.service.QuarterServiceTest" time="0.417" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -11,7 +11,7 @@
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/temurin-17-jdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/runner/work/ComptaLapinSwing/ComptaLapinSwing/target/surefire/surefirebooter-20260314144447541_3.jar /home/runner/work/ComptaLapinSwing/ComptaLapinSwing/target/surefire 2026-03-14T14-44-47_466-jvmRun1 surefire-20260314144447541_1tmp surefire_0-20260314144447541_2tmp"/>
+    <property name="sun.java.command" value="/home/runner/work/ComptaLapinSwing/ComptaLapinSwing/target/surefire/surefirebooter-20260314144906236_3.jar /home/runner/work/ComptaLapinSwing/ComptaLapinSwing/target/surefire 2026-03-14T14-49-06_164-jvmRun1 surefire-20260314144906236_1tmp surefire_0-20260314144906236_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/runner/work/ComptaLapinSwing/ComptaLapinSwing/target/test-classes:/home/runner/work/ComptaLapinSwing/ComptaLapinSwing/target/classes:/home/runner/.m2/repository/org/hsqldb/hsqldb/2.7.2/hsqldb-2.7.2.jar:/home/runner/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/runner/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -26,7 +26,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/runner/work/ComptaLapinSwing/ComptaLapinSwing/target/surefire/surefirebooter-20260314144447541_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/ComptaLapinSwing/ComptaLapinSwing/target/surefire/surefirebooter-20260314144906236_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.18+8"/>
     <property name="user.name" value="runner"/>
@@ -52,8 +52,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testCloseAndReopenQuarter" classname="com.comptalapin.service.QuarterServiceTest" time="0.304"/>
-  <testcase name="testAccountBalance" classname="com.comptalapin.service.QuarterServiceTest" time="0.037"/>
-  <testcase name="testAddOperationAndSummary" classname="com.comptalapin.service.QuarterServiceTest" time="0.034"/>
-  <testcase name="testCreateQuarter" classname="com.comptalapin.service.QuarterServiceTest" time="0.022"/>
+  <testcase name="testCloseAndReopenQuarter" classname="com.comptalapin.service.QuarterServiceTest" time="0.276"/>
+  <testcase name="testAccountBalance" classname="com.comptalapin.service.QuarterServiceTest" time="0.033"/>
+  <testcase name="testAddOperationAndSummary" classname="com.comptalapin.service.QuarterServiceTest" time="0.035"/>
+  <testcase name="testCreateQuarter" classname="com.comptalapin.service.QuarterServiceTest" time="0.025"/>
 </testsuite>

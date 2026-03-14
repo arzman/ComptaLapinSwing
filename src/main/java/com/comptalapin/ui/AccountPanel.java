@@ -191,7 +191,7 @@ public class AccountPanel extends JPanel {
                 for (int m : months) {
                     BigDecimal forecast = accountService.forecastBalanceAtEndOfMonth(
                             account, allQuarters, currentQuarter, m);
-                    sb.append(String.format("%-16s", String.format("%,.2f€", forecast)));
+                    sb.append(String.format("%-16s", String.format(java.util.Locale.FRENCH, "%,.2f€", forecast)));
                 }
                 sb.append("\n");
             }

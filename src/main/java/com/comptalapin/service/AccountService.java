@@ -53,9 +53,11 @@ public class AccountService {
     public BigDecimal forecastBalanceAtEndOfMonth(Account account, List<Quarter> allQuarters,
                                                     Quarter currentQuarter, int targetMonth) throws SQLException {
         BigDecimal balance = account.getInitialBalance();
-        // Apply all past quarters fully
+        // Apply all past quarters fully (quarters with earlier year/number than currentQuarter)
         for (Quarter quarter : allQuarters) {
-            if (quarter.getId().equals(currentQuarter.getId())) continue;
+            boolean isBefore = quarter.getYear() < currentQuarter.getYear() ||
+                    (quarter.getYear() == currentQuarter.getYear() && quarter.getNumber() < currentQuarter.getNumber());
+            if (!isBefore) continue;
             List<Operation> ops = operationDao.findByAccountAndQuarter(account, quarter);
             balance = applyOperations(account, balance, ops, null);
         }

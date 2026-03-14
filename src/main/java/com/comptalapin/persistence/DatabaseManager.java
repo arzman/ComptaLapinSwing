@@ -24,6 +24,7 @@ public class DatabaseManager {
             String dbUrl = System.getProperty(DB_URL_PROPERTY, DEFAULT_DB_URL);
             Class.forName("org.hsqldb.jdbc.JDBCDriver");
             connection = DriverManager.getConnection(dbUrl, DB_USER, DB_PASSWORD);
+            connection.setAutoCommit(false);
             initSchema();
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException("Failed to initialize database", e);
