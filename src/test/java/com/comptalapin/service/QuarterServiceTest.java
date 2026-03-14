@@ -2,20 +2,20 @@ package com.comptalapin.service;
 
 import com.comptalapin.model.*;
 import com.comptalapin.persistence.DatabaseManager;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class QuarterServiceTest {
     private QuarterService quarterService;
     private AccountService accountService;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         System.setProperty("comptalapin.db.url", "jdbc:hsqldb:mem:testdb_" + System.nanoTime());
         DatabaseManager.resetInstance();
@@ -23,7 +23,7 @@ public class QuarterServiceTest {
         accountService = new AccountService();
     }
 
-    @After
+    @AfterEach
     public void tearDown() throws Exception {
         DatabaseManager.resetInstance();
     }
